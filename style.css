@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.title-bar{
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.menu-item:hover{
+    background-color: #0b5f31;
+    cursor: pointer;
+}
+.menu-item.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+.menu-item.selected:hover{
+    cursor: default;
+}
+.menu-icon{
+    padding-right: 10px;
+    padding-right: 10px;
+}
+.menu-icon-bar{
+    background-color: rgb(241,241,241);
+    display: flex;
+    align-items: center;
+}
+.menu-bar{
+    height: 5vh;
+    display: flex;
+    background-color: #107c41;
+
+    
+}
+.menu-icon:hover{
+    background-color: rgb(159, 170, 184);
+}
+.font-family-selector{
+    height: 25px;
+    font-size: 20px;
+    width: 150px;
+}
+.font-size-selector{
+    height: 25px;
+    font-size: 20px;
+}
+
+option{
+    height: 25px;
+    font-size:18px ;
+}
+.menu-icon-bar{
+   height: 6vh;
+   
+}
+.formula-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    padding-right:0.7rem ;
+    background-color: rgb(241,241,241);
+}
+.data-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap:wrap ;
+
+    
+    
+}
+.select-all{
+    height: 30px;
+    width: 30px;
+    border: 1px solid lightgray;
+    
+}
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+    display:flex;
+    overflow: hidden;
+    
+    
+    
+}
+.row-name-container{
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+    overflow: hidden;
+
+    
+    
+    
+}
+.input-cell-container{
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border:1px solid lightgray;
+    overflow: scroll;
+}
+.sheet-bar{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+.icon-left-scroll, .icon-right-scroll{
+    font-size:30px
+}
+.scroller{
+    
+    width: 70px;
+    
+
+    
+}
+.icon-add{
+    color:#107c41;
+  width: 40px;
+}
+.sheet-tab-container{
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+    
+}
+.sheet-tab{
+    border-bottom: 4px solid #107c41;
+    padding-left:10px;
+    padding-right:10px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+    
+}
+.icon-left-scroll:hover, .icon-right-scroll:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.icon-add:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+}
+.sheet-tab:hover{
+    cursor:default;
+}
+.column-name{
+   min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    font-weight: "bold";
+}
+.row-name{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
+    /* overflow: hidden; */
+    
+}
+.cell-row{
+
+    display: flex;
+}
+.input-cell{
+    min-width:100px;
+   min-height: 25px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    outline-color: #107c41;
+}
+.input-cell.selected{ 
+    border:2px solid #107c41;
+}
+.formula-editor{
+    height: 70%;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    align-items: center;
+
+}
+.selected-cell{
+    width: 120px;
+}
+.function-sign{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formula-input{
+    width: calc(100vw - 160px);
+    background-color: #fff;
+    outline-color: #017c41;
+}
+
+.menu-icon.selected{
+    background-color: lightgray;
+}
+
+.input-cell.top-cell-selected{
+    border-top:none ;
+    
+}
+.input-cell.bottom-cell-selected{
+    border-bottom: 1px solid lightgray;
+}
+
+.input-cell.right-cell-selected{
+    border-right: 1px solid lightgray;
+
+
+}
+
+.input-cell.left-cell-selected{
+    border-left: none;
+}
